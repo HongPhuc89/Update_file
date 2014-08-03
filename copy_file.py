@@ -56,8 +56,8 @@ def update_folder(src_path,des_path):
 #main programme
 start=time.time()
 
-src_path        = ur"D:/WorkSpace/SDK/sdk_unit_test"
-des_path        = ur"H:/sdk_unit_test"
+src_path        = ur"D:/WorkSpace/"
+des_path        = ur"H:/"
 print "Copying file..."
 update_folder(src_path,des_path)
 finish          = time.time()
