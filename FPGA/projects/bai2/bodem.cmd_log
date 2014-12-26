@@ -1,0 +1,4 @@
+xst -ise "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bai2.ise" -intstyle ise -ifn "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bodem.xst" -ofn "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bodem.syr"
+xst -ise "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bai2.ise" -intstyle ise -ifn "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bodem.xst" -ofn "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bodem.syr"
+xst -ise "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bai2.ise" -intstyle ise -ifn "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bodem.xst" -ofn "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bodem.syr"
+xst -ise "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bai2.ise" -intstyle ise -ifn "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bodem.xst" -ofn "C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/bodem.syr"

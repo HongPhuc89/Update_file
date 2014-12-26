@@ -1,0 +1,420 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/HongPhuc/Desktop/FPGA/projects/bai2/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: bodem.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "bodem.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "bodem"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : bodem
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : bodem.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/HongPhuc/Desktop/FPGA/src/bai2/hien_thi_led.vhd" in Library work.
+Architecture behavior of Entity hien_thi_led is up to date.
+Compiling vhdl file "C:/Users/HongPhuc/Desktop/FPGA/src/bai2/bodem.vhd" in Library work.
+Architecture behavior of Entity bodem is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <bodem> in library <work> (architecture <behavior>).
+
+Analyzing hierarchy for entity <hien_thi_led> in library <work> (architecture <behavior>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <bodem> in library <work> (Architecture <behavior>).
+Entity <bodem> analyzed. Unit <bodem> generated.
+
+Analyzing Entity <hien_thi_led> in library <work> (Architecture <behavior>).
+Entity <hien_thi_led> analyzed. Unit <hien_thi_led> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <hien_thi_led>.
+    Related source file is "C:/Users/HongPhuc/Desktop/FPGA/src/bai2/hien_thi_led.vhd".
+    Found 16x7-bit ROM for signal <out_7seg$mux0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hien_thi_led> synthesized.
+
+
+Synthesizing Unit <bodem>.
+    Related source file is "C:/Users/HongPhuc/Desktop/FPGA/src/bai2/bodem.vhd".
+    Found 32-bit register for signal <t_chuc>.
+    Found 32-bit adder for signal <t_chuc$add0000> created at line 31.
+    Found 32-bit adder for signal <t_chuc$addsub0000> created at line 34.
+    Found 32-bit up counter for signal <t_donvi>.
+    Found 32-bit register for signal <t_tram>.
+    Found 32-bit adder for signal <t_tram$addsub0000> created at line 38.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  64 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <bodem> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x7-bit ROM                                          : 3
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 2
+ 32-bit register                                       : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 3
+ 16x7-bit ROM                                          : 3
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <bodem> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block bodem, actual ratio is 7.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 96
+ Flip-Flops                                            : 96
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : bodem.ngr
+Top Level Output File Name         : bodem
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 549
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 124
+#      LUT2                        : 4
+#      LUT2_L                      : 1
+#      LUT3                        : 10
+#      LUT3_D                      : 1
+#      LUT3_L                      : 3
+#      LUT4                        : 99
+#      LUT4_D                      : 4
+#      LUT4_L                      : 7
+#      MUXCY                       : 151
+#      MUXF5                       : 15
+#      VCC                         : 1
+#      XORCY                       : 124
+# FlipFlops/Latches                : 96
+#      FDC                         : 36
+#      FDCE                        : 60
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 1
+#      OBUF                        : 21
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      150  out of   1920     7%  
+ Number of Slice Flip Flops:             96  out of   3840     2%  
+ Number of 4 input LUTs:                257  out of   3840     6%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    173    13%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+count                              | BUFGP                  | 96    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 96    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 13.903ns (Maximum Frequency: 71.925MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 13.846ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'count'
+  Clock period: 13.903ns (frequency: 71.925MHz)
+  Total number of paths / destination ports: 73558 / 156
+-------------------------------------------------------------------------
+Delay:               13.903ns (Levels of Logic = 32)
+  Source:            t_donvi_1 (FF)
+  Destination:       t_tram_1 (FF)
+  Source Clock:      count rising
+  Destination Clock: count rising
+
+  Data Path: t_donvi_1 to t_tram_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.720   1.463  t_donvi_1 (t_donvi_1)
+     LUT1:I0->O            1   0.551   0.000  Madd_t_chuc_add0000_cy<1>_rt (Madd_t_chuc_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  Madd_t_chuc_add0000_cy<1> (Madd_t_chuc_add0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<2> (Madd_t_chuc_add0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<3> (Madd_t_chuc_add0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<4> (Madd_t_chuc_add0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<5> (Madd_t_chuc_add0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<6> (Madd_t_chuc_add0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<7> (Madd_t_chuc_add0000_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<8> (Madd_t_chuc_add0000_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<9> (Madd_t_chuc_add0000_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<10> (Madd_t_chuc_add0000_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<11> (Madd_t_chuc_add0000_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<12> (Madd_t_chuc_add0000_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<13> (Madd_t_chuc_add0000_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<14> (Madd_t_chuc_add0000_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<15> (Madd_t_chuc_add0000_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<16> (Madd_t_chuc_add0000_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<17> (Madd_t_chuc_add0000_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<18> (Madd_t_chuc_add0000_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<19> (Madd_t_chuc_add0000_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  Madd_t_chuc_add0000_cy<20> (Madd_t_chuc_add0000_cy<20>)
+     XORCY:CI->O           1   0.904   1.140  Madd_t_chuc_add0000_xor<21> (t_chuc_add0000<21>)
+     LUT4:I0->O            1   0.551   0.000  t_donvi_cmp_eq0000_wg_lut<0> (t_donvi_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  t_donvi_cmp_eq0000_wg_cy<0> (t_donvi_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  t_donvi_cmp_eq0000_wg_cy<1> (t_donvi_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  t_donvi_cmp_eq0000_wg_cy<2> (t_donvi_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  t_donvi_cmp_eq0000_wg_cy<3> (t_donvi_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  t_donvi_cmp_eq0000_wg_cy<4> (t_donvi_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O          35   0.303   1.938  t_donvi_cmp_eq0000_wg_cy<5> (t_donvi_cmp_eq0000_wg_cy<5>)
+     LUT3_L:I2->LO         1   0.551   0.126  t_donvi_cmp_eq0000_wg_cy<7>1_1 (t_donvi_cmp_eq0000_wg_cy<7>1)
+     LUT4:I3->O           32   0.551   1.879  t_tram_cmp_eq0000294 (t_tram_cmp_eq0000)
+     LUT4:I3->O            1   0.551   0.000  t_tram_mux0002<30>1 (t_tram_mux0002<30>)
+     FDC:D                     0.203          t_tram_1
+    ----------------------------------------
+    Total                     13.903ns (7.357ns logic, 6.546ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'count'
+  Total number of paths / destination ports: 846 / 21
+-------------------------------------------------------------------------
+Offset:              13.846ns (Levels of Logic = 11)
+  Source:            t_chuc_23 (FF)
+  Destination:       led2<4> (PAD)
+  Source Clock:      count rising
+
+  Data Path: t_chuc_23 to led2<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.720   1.216  t_chuc_23 (t_chuc_23)
+     LUT4:I0->O            1   0.551   0.000  t_tram_cmp_eq00001_wg_lut<0> (t_tram_cmp_eq00001_wg_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  t_tram_cmp_eq00001_wg_cy<0> (t_tram_cmp_eq00001_wg_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  t_tram_cmp_eq00001_wg_cy<1> (t_tram_cmp_eq00001_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  t_tram_cmp_eq00001_wg_cy<2> (t_tram_cmp_eq00001_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  t_tram_cmp_eq00001_wg_cy<3> (t_tram_cmp_eq00001_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  t_tram_cmp_eq00001_wg_cy<4> (t_tram_cmp_eq00001_wg_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  t_tram_cmp_eq00001_wg_cy<5> (t_tram_cmp_eq00001_wg_cy<5>)
+     MUXCY:CI->O          10   0.303   1.473  t_tram_cmp_eq00001_wg_cy<6> (u2/out_7seg_and0000)
+     LUT2:I0->O            2   0.551   1.216  u2/out_7seg<5>21 (N18)
+     LUT4:I0->O            1   0.551   0.801  u2/out_7seg<4>1 (led2_4_OBUF)
+     OBUF:I->O                 5.644          led2_4_OBUF (led2<4>)
+    ----------------------------------------
+    Total                     13.846ns (9.140ns logic, 4.706ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.54 secs
+ 
+--> 
+
+Total memory usage is 186556 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

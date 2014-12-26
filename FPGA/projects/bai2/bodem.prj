@@ -1,0 +1,2 @@
+vhdl work "../../src/bai2/hien_thi_led.vhd"
+vhdl work "../../src/bai2/bodem.vhd"
