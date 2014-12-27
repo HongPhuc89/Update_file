@@ -1,0 +1,54 @@
+1.CHuc nang nhiem vu cac bai toan co ban he thong thi giac ki thuat
+2. Anh so va cac tinh chat co ban
+3.Cac ki thuat khoi phuc anh
+4.Cac ki thuat tang cuong anh
+5.Phan tich bai toan tim kiem doi tuong trong anh
+6.Nhan dang doi tuong trong anh: chuc nang, nhiem vu, phan loai
+Cac giai doan co ban,cac bo phan lop (dmin, lan can, Neuron MLP -Kohanen)
+7.Phan doan anh- Cac thuat toan phat hien suon, lay nguong, mo hinh hoa nen thich nghi
+- Tinh cap thiet, cac ki thuat
+8.Mo hinh hoa ne thich nghi
+
+De thi gom 2 cau (60 ph)
+
+Câu 1: Chức năng nhiệm vụ cơ bản của hệ thống thị giác kĩ thuật
+    Nhiệm vụ cỉa các HTTGKT rất đa dạng phụ thuộc vào lĩnh vực và điều kiện sử dụng cụ thể.
+Các HTTGKT có thể được tích hợp trong tổ hợp rô bốt kĩ thuật, các hệ thống chuẩn đoán y tế,
+hệ thống dẫn đường và điều khiển trên khoang các thiết bị bay, trong các hệ thống kiểm tra và
+chuẩn đoán kĩ thuật...Thực tế tất cả nhiệm vụ chính của HTTGKT có thể qui về các nhiệm vụ cơ bản sau:
+cải thiện chất lượng ảnh, phân loại các mẫu, phát hiện và đánh giá tọa độ đối tượng quan sát, phân
+tích cảnh
+
+    - Cải thiện chất lượng (khôi phục, cấu trúc lại) ảnh
+    Đây là quá trình xử lý ảnh đầu vào nhằm nhận được ảnh mới có chất lượng hơn, mang nhiều thông tin
+cần thiết hơn và loại bỏ các thông tin dư thừa. Thuật ngữ "cải thiện" cần phải gắn với
+một nhiệm vụ cần giải quyết cụ thể. Chẳng hạn để tăng khả năng tiếp nhận ảnh của con người thì cần
+nhấn mạnh biên của đối tượng quan sát. Trong trường hợp khác việc cải thiện ảnh có thể gắn với việc
+chế áp các dạng tạp cao tần hay thấp tần...
+    Chất lượng của quá trình xử lý náy có thể được đánh giá bới các chỉ tiêu kĩ thuật khác nhau.
+Ví dự như tỉ số tín/tạp, lượng thông tin dư thừa, entropi của ảnh... hay các đánh giá thực nghiệm.
+
+    - Phân loại mẫu, phân tích các nhóm
+    Là quá trình gán đối tượng trong ảnh về các lớp đối tượng cụ thể. Khi đó thành phần và nội dung
+của các lớp đối tượng cần nhận dạng được xác định bởi các bài toán cần giải quyết và có thể chỉ là
+qui ước. Nếu đối tượng chưa được phân loại trước thì cần phân tích chúng thành các lớp đối tượng.
+Chỉ tiêu chất lượng của quá trình này là : xác suất nhận dạng đúng, xác suất nhạn dạng sai...
+
+    - Tìm kiếm đối tượng, phát hiện và đánh giá tọa độ
+    Trong quá trình này người ta thường coi rằng trong ảnh chỉ có đối tượng chỉ có đối tượng quan sát
+và nền. Khi giải quyết bài toán phát hiện, lớp đối tượng sẽ không được xác định.Việc đánh giá tọa độ
+đối tượng cho phép xác định cấu trúc, định hình của bề mặt nào đó...
+Tính hiệu quả của việc thực hiện quá trình được đánh giá bởi độ chính xác đo ở xác suất phát hiện
+đã cho hoặc xác suất phát hiện đúng (sai)
+
+    - Phân tích cảnh và dự báo tình huống
+    Các quá trình này cho phép nhận được các mô tả của đối tượng cần thiết để giải quyết các bài
+toán đặt ra, cũng như xác địnhđược mối liên hệ lẫn nhau giữa các đối tượng trong cảnh quan sát.
+Các mô tả thu được nhờ phân tích cảnh phụ thuộc vào bài toán giải quyết có thể bao gồm các mô tả
+đặc tính đối tượng, vị trí tương đối của chúng, cũng như ảnh hưởng lẫn nhau giữa chúng.
+Việc dự báo tình huống là các phép đánh giá hậu quả của một tác động nào đó đến đối tượng khác.
+Nếu ảnh nhận được hoặc các tình huống cần đánh giá thay đổi theo thowaif gian thì việc phân tích
+cảnh được coi là động.
+
+Câu 2 : Ảnh số và các tính chât cơ bản
+
