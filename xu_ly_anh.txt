@@ -1,4 +1,4 @@
-1.CHuc nang nhiem vu cac bai toan co ban he thong thi giac ki thuat
+1.Chức nang nhiem vu cac bai toan co ban he thong thi giac ki thuat
 2. Anh so va cac tinh chat co ban
 3.Cac ki thuat khoi phuc anh
 4.Cac ki thuat tang cuong anh
@@ -50,5 +50,5 @@ Việc dự báo tình huống là các phép đánh giá hậu quả của mộ
 Nếu ảnh nhận được hoặc các tình huống cần đánh giá thay đổi theo thowaif gian thì việc phân tích
 cảnh được coi là động.
 
-Câu 2 : Ảnh số và các tính chât cơ bản
+Câu 2 : Ảnh số và các tính chất cơ bản
 
